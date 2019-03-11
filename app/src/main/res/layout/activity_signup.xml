@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SignupActivity">
+
+
+    <TextView
+        android:id="@+id/textNameSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fullName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/nameRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text"
+        android:layout_below="@+id/textNameSignUp"/>
+
+    <TextView
+        android:id="@+id/textEmailSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/nameRegister"/>
+
+    <EditText
+        android:id="@+id/mailRegister"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEmailSignUp"/>
+
+    <TextView
+        android:id="@+id/textMOBILESignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mob"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/mailRegister"/>
+
+    <EditText
+        android:id="@+id/phoneRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:layout_below="@+id/textMOBILESignUp"/>
+
+    <TextView
+        android:id="@+id/textPasswordSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/phoneRegister"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/textPasswordSignUp"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/textrepeatPasSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repeat"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/passwordRegister"/>
+
+    <EditText
+        android:id="@+id/repeatPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_below="@+id/textrepeatPasSignUp"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin"
+        android:layout_below="@+id/repeatPasswordRegister"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/adminCheckBoxSignUp"/>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:onClick="register"
+        android:layout_gravity="center"
+        android:paddingRight="70dp"
+        android:paddingLeft="70dp"
+        android:background="@drawable/btn_green"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/adminCheckBoxSignUp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnLoginReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:onClick="goToLogin"
+        android:background="@drawable/btn_green"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:paddingRight="100dp"
+        android:paddingLeft="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have account?"
+        android:layout_gravity="center"
+        android:textColor="@color/Blue"
+        android:id="@+id/doo"
+        android:onClick="goToLogin"
+        android:layout_above="@+id/btnLoginReg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progressRegister"
+        android:visibility="invisible"/>
+</RelativeLayout>

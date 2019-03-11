@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/profileAdmin"
+        android:title="@string/update"/>
+    <item
+        android:id="@+id/adminAdd"
+        android:title="@string/add"/>
+    <item
+        android:id="@+id/adminEdit"
+        android:title="@string/edit"/>
+
+    <item
+        android:id="@+id/adminRemove"
+        android:title="@string/remove"/>
+
+    <item
+        android:id="@+id/adminLogout"
+        android:title="@string/logout"/>
+</menu>

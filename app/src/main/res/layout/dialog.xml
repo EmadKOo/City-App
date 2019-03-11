@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<EditText
+        android:hint="@string/title"
+        android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/editImagePath"
+            android:hint="@string/imgPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:id="@+id/editCategory"
+            android:hint="@string/category"/>
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:hint="@string/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:layout_gravity="center"
+        android:id="@+id/submitEdit"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/btn_green"
+        android:textColor="@color/white"/>
+</LinearLayout>

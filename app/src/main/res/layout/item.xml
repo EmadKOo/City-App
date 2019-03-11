@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/itemLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/transdialog"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/imageItem"
+        android:layout_alignParentLeft="true"
+        android:src="@color/LTomato"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textItem"
+        android:text="text"
+        android:layout_gravity="center"
+        android:layout_below="@+id/imageItem"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"/>
+
+</RelativeLayout>
