@@ -45,7 +45,7 @@ public class SignupActivity extends AppCompatActivity {
         //customize toolbar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("Details");
+        getSupportActionBar().setTitle(R.string.register);
 
         helper = new DBHelper(getApplicationContext());
         setUpViews();
