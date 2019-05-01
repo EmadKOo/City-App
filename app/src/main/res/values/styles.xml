@@ -20,4 +20,7 @@
     <style name="progresspar" parent="Theme.AppCompat">
         <item name="colorAccent">@color/DarkBlue</item>  <!--8aa4ff-->
     </style>
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">@color/white</item> <!-- Watever color you want-->
+    </style>
 </resources>
